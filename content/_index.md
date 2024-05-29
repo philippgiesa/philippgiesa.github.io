@@ -1,0 +1,4 @@
+Welcome to my blog, where you can find posts related to topics like Data Science (my profession) but also the Maker Culture (my newest hobby).
+Recently, I've found interest in building an outdoor-particle-sensor and analyzing its data. You can read about it in the first series "If the environment agency won't do, I'll do it myself".
+
+Please note that the blog-posts might not be best-practice, will most likely contain shortcuts, will at some point be out-of-date and might even be plain wrong (I try to avoid that, but if you find any mistakes, please reach out to me). Its main purpose is to document my work (for myself). If someone get an interesting read out of it, great, if it helps someone, even better. But please use any information here with caution. Thanks. :) 
