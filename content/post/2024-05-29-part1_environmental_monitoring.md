@@ -9,12 +9,14 @@ First of all, I like nerdy stuff and I always wanted to have a side-project. But
 
 So, I live in a residential complex and the first floor is commercially used. The usage of the space below my apartement was intended for offices or retail. But the newest tenant is a small restaurant-chain serving mainly burgers and fries. Yay! What's more, the ventilation is on ground-level, directly below the bedroom windows and balconies. Yay!
 
-{{< figure src="/img/meme_zero_days_without.png" title="I can't enjoy burger anymore. Thanks." width="300px" class="alignright">}}
+{{< figure src="/img/meme_zero_days_without.png" caption="Figure 1: I can't enjoy burger anymore. Thanks. [[Imgflip](https://www.imgflip.com/)]" width="300px" >}}
 
 Long story short, the smell is unbearable. I asked the environmental agency to monitor the air-quality and they only said something about "community of ownership ... yada yada yada ... not responsible ... yada yada yada ...".
 Long story even shorter, I'm not giving up on that front, but I said to myself. If they won't monitor the emissions and air-quality, then I will.
 
 And so, the idea was born, to build an outdoor air-quality-monitoring station.
+
+This blog post is heavily inspired by [Ganesh Shankar](https://curiositysavestheplanet.com/air-quality-monitor-raspberry-pi-enviro-maker-project/) and [Sandy Macdonald](https://learn.pimoroni.com/article/enviro-plus-and-luftdaten-air-quality-station) when it comes to the outdoor sensor and again [Sandy Macdonald](https://sandyjmacdonald.github.io/2021/12/29/setting-up-influxdb-and-grafana-on-the-raspberry-pi-4/) in terms of saving and analyzing the data.
 
 ## Necessary (and optional) hardware
 There are some things you absolutely need, and some things are optional.
@@ -28,13 +30,15 @@ The necessary bits and pieces are:
 - **Weatherproof casing**: If you want to build an outdoor air-quality sensor, some form of weatherproof casing is absolutely necessary. Note that it can't be airtight, the sensors need fresh (or not so fresh) air.
     - If you want it cheap, get some angled drain or aircon pipes (preferably with a rectangular shape), so that air can get to the sensors from underneath, but the electronics stay dry when it rains.
     - If you want if fancier, get a small distribution board like the Spelsberg AKi05 (that's what I'm planning to get, more on that in a feature blog post). It's IP65, has knockouts for cable management and also for your sensors. And it has a door for easy accessability.
+- **PiBow case**: Well, not really necessary, but I'd recommend some casing for the Pi Zero.
 
 That should be everything you need.
 
 But maybe not everything you want.
 
 This set-up relies on a cabled power source (your charger). So, you need a wall socket or a way to lay a cable to your preferred spot for your air-quality sensor. Mine is on the windowsill with no wall socket in reach and no reasonable way to lay a cable.
-{{< figure src="/img/meme_solar_power_exit.png" title="It's still a budget project (nobody said how large the budget has to be...)" width="400px">}}
+
+{{< figure src="/img/meme_solar_power_exit.png" caption="Figure 2: It's still a budget project (nobody said how large the budget has to be...) [[Imgflip](https://www.imgflip.com/)]" width="400px">}}
 
 Let's get solar power into the game. If you want to go crazy - like me - then you'll need:
 
@@ -51,4 +55,9 @@ Okay, I could do the hard math, like calculating average power consumption, look
 My plan is to get the 10W solar panel and also have the charge-indicator of the powerbank visible, so that I can check the battery level and top up with a cable, if needed.
 
 ## Hardware assembly
-Connect Pi to Enviro.
+Now let's prepare everything, assemble the hardware and get going.
+
+First you need to install Raspberry Pi OS on the Micro SD card.
+
+The final thing:
+{{< figure src="/img/pi_enviro_sensor_assembled.jpg" caption="Figure 3: Pi Zero with Enviro+ HAT and attached PMS5003" width="600px" >}} 
