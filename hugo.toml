@@ -1,4 +1,4 @@
-baseurl = "//philippgiesa.github.io/"
+baseurl = "https://philippgiesa.github.io/"
 DefaultContentLanguage = "en"
 title = "Data Maker"
 # Using theme as git submodule 
